@@ -1,0 +1,348 @@
+Guitar Hero|Rythm
+God of War Ragnarok|Action-Adventure
+Devil May Cry|Action
+Jak and Daxter 1|Platformer
+Crash Bandicoot|Platformer
+Crash Tag Team Racing|Racing
+Super Mario 3D World|Platformer
+Super Mario Superstars|Platformer
+Mario Kart 8|Racing
+Pokemon Sword and Shield|RPG
+Pokemon Red, Blue and Yellow|RPG
+Pokemon Platinum|RPG
+Pokemon Emerald|RPG
+Pokemon X and Y|RPG
+Resident Evil 8 (Village)|Survival Horror
+Cyberpunk 2077|RPG
+The Last of Us Part 1|Action-Adventure
+The Last of Us Part 2|Action-Adventure
+Titanfall 1|FPS
+Titanfall 2|FPS
+Uncharted 1|Action-Adventure
+Far Cry 6|FPS
+Fallout 4|RPG
+Fallout New Vegas|RPG
+Fallout 76|RPG
+Witcher 3|Action RPG
+Dark Souls 3|Action RPG
+Elden Ring|Action RPG
+Bloodborne|Action RPG
+Demon’s Souls|Action RPG
+Sekiro: Shadows Die Twice|Action-Adventure
+Fortnite|Battle Royale
+Call of Duty: Black Ops 1|FPS
+Call of Duty: Black Ops 6 (Vanguard)|FPS
+Call of Duty: Modern Warfare (New) 1|FPS
+Call of Duty: Modern Warfare (New) 2|FPS
+Call of Duty: Warzone|Battle Royale
+Apex Legends|Battle Royale
+Minecraft|Sandbox
+Helldivers 2|Top-down Shooter
+Battlefield V|FPS
+Battlefield 2042|FPS
+Roblox|Sandbox
+Terraria|Sandbox
+Hollow Knight|Metroidvania
+Legend of Zelda: Tears of the Kingdom|Action-Adventure
+League of Legends (LoL)|MOBA
+CS:GO|FPS
+Valorant|FPS
+Forza Horizon 5|Racing
+Need for Speed|Racing
+Hades|Roguelike
+Super Mario 64|Platformer
+Ghost of Tsushima|Action-Adventure
+Stray|Adventure
+SIFU|Action
+Melatonin|Adventure
+OSU|Rhythm
+It Takes Two|Co-op
+A Way Out|Co-op
+Hades|Roguelike
+Assassin’s Creed Valhalla|Action-Adventure
+Batman all|Action-Adventure
+Brawlhalla|Fighting
+Binding of Isaac|Roguelike
+GTA|Open World
+Just Cause|Open World
+Payday|FPS
+Mafia|Action-Adventure
+Hitman|Stealth
+Gran Turismo|Racing
+Doom Eternal|FPS
+Age of Empires|RTS
+PUBG|Battle Royale
+Black Myth: Wukong|Action RPG
+Ratchet and Clank|Action-Adventure
+Sonic all|Platformer
+Marvel Rivals|Fighting
+Overwatch 2|FPS
+Borderlands 3|FPS
+Tomb Raider|Action-Adventure
+Shadow of the Colossus|Action-Adventure
+Tekken 8|Fighting
+Mortal Kombat all|Fighting
+Street Fighter 6|Fighting
+Super Smash Bros|Fighting
+Dead or Alive|Fighting
+Dead by Daylight|Survival Horror
+Skyrim|RPG
+Rocket League|Sports
+Fifa|Sports
+NBA|Sports
+Madden|Sports
+Starcraft|RTS
+No Man’s Sky|Exploration
+Friday Night Funkin’|Rhythm
+Sea of Thieves|Action-Adventure
+Rainbow Six Siege|Tactical Shooter
+Teamfight Tactics (TFT)|Auto Battler
+Smite|MOBA
+Papers, Please|Puzzle
+Stanley Parable|Interactive Fiction
+Portal 2|Puzzle
+Firewatch|Adventure
+Little Nightmares all|Puzzle
+ARK: Survival Evolved|Survival
+RUST|Survival
+Unturned|Survival
+DayZ|Survival
+Squad|Tactical Shooter
+Hell Let Loose|WWII Shooter
+Helltaker|Puzzle
+Medal of Honor|FPS
+Until Dawn|Horror
+Life is Strange|Adventure
+Five Nights at Freddy’s (FNAF)|Horror
+Raft|Survival
+Subnautica|Survival
+Alien Isolation|Survival Horror
+Blasphemous|Action-Adventure
+Final Fantasy XIV|MMORPG
+The Sims|Simulation
+Jurassic Park|Action-Adventure
+Mount & Blade|RPG
+Passpartout|Simulation
+For Honor|Action
+Chivalry 2|Medieval Combat
+Silent Hill|Survival Horror
+Evil Within|Survival Horror
+Outlast|Survival Horror
+Left 4 Dead|FPS
+Team Fortress 2 (TF2)|FPS
+Half-Life|FPS
+Dota 2|MOBA
+Spyro all|Platformer
+Horizon Series (Horizon Zero Dawn, Forbidden West)|Action RPG
+Flight Simulator|Simulation
+60 Seconds|Survival
+F1|Racing
+Keep Talking and Nobody Explodes|Puzzle
+Hello Neighbor|Stealth
+Celeste|Platformer
+Thief Simulator|Simulation
+Darkwood|Survival Horror
+Baldur's Gate 3|RPG
+Pac-Man|Arcade
+Plants vs. Zombies|Tower Defense
+Stronghold Crusade|RTS
+Metroid|Action-Adventure
+Phasmophobia|Horror
+Rage|FPS
+Astrobot|Platformer
+Hotline Miami|Action
+Max Payne|Third-Person Shooter
+Pummel Party|Party
+Hearthstone|Card Game
+Starfield|RPG
+Little Big Planet|Platformer
+Serious Sam|FPS
+SCUM|Survival
+STALKER|FPS
+The Forest 1 & 2|Survival
+Lies of P|Action RPG
+Dishonored|Action-Adventure
+Death Stranding|Action
+Dying Light|Action
+Deathloop|FPS
+We Happy Few|Survival
+Poppy’s Playtime|Horror
+Bendy and the Ink Machine|Horror
+Blair Witch|Survival Horror
+Rain World|Platformer
+Escape from Tarkov|FPS
+Hunt: Showdown|FPS
+Vampyr|Action RPG
+Stardew Valley|Simulation
+Doki Doki Literature Club (DDLC)|Visual Novel
+Metro Exodus|FPS
+Gears of War|Third-Person Shooter
+Halo|FPS
+Slime Rancher|Simulation
+Bioshock|FPS
+Red Dead Redemption|Action-Adventure
+Ghostrunner|Action
+Mirror’s Edge|Action-Adventure
+WWZ (World War Z)|Shooter
+World of Warcraft (WOW)|MMORPG
+Cities Skylines|Simulation
+Trackmania (all)|Racing
+Baldi’s Basics|Horror
+Big Rigs Over the Road|Racing
+Don’t Touch the Button|Party
+Not Your Neighbor|Horror
+PEZ|Puzzle
+Ghost Recon|Tactical Shooter
+Geometry Dash|Rhythm
+KNACK|Action
+Another Crab’s Treasure|Platformer
+Ready or Not|Tactical Shooter
+Bread & Fred|Indie
+The Finals|Shooter
+Overcooked 1|Cooperative
+Persona|JRPG
+Kingdom Hearts|Action RPG
+Resistance|FPS
+Dragon Ball (games)|Fighting
+Euro Truck Simulator|Simulation
+Asura’s Wrath|Action
+Metal Gear Solid|Stealth
+Palworld|Open World
+Donkey Kong|Platformer
+Wii Sports|Sports
+Simpsons Hit & Run|Action-Adventure
+Tetris|Puzzle
+Golf It!|Sports
+Getting Over It|Platformer
+Chained Together|Indie
+Into the Gungeon|Roguelike
+Into the Breach|Strategy
+Yu-Gi-Oh!|Card Game
+Zombi|Survival Horror
+Back 4 Blood|FPS
+Among Us|Party
+Fall Guys|Battle Royale
+Noita|Roguelike
+The Hunter|Simulation
+Fishing Planet|Simulation
+Farming Simulator 25|Simulation
+Dead Space|Survival Horror
+Dead Cells|Roguelike
+Drift Racing|Racing
+Rally 4|Racing
+Paint the Town Red|Action
+Undertale|RPG
+Inside|Puzzle
+Sniper Elite|Tactical Shooter
+7 Days to Die|Survival
+Prey|FPS
+Sally Face|Adventure
+Deltarune|RPG
+Limbo|Puzzle
+We Were Here|Puzzle
+Just Act Natural|Adventure
+Slenderman|Horror
+Days Gone|Action-Adventure
+Enlisted|FPS
+Zula|FPS
+Power Washing Simulator|Simulation
+Animal Crossing|Life Simulation
+Ben 10|Action
+Hogwarts Legacy|Action RPG
+Harry Potter Quidditch Champions|Sports
+Middle Earth: Shadow of Mordor / Shadow of War|Action RPG
+GoldenEye 007|Shooter
+Prince of Persia|Action-Adventure
+Hue|Puzzle
+Mad Max|Action-Adventure
+The Culling|Battle Royale
+Heavy Rain|Interactive Drama
+Beyond: Two Souls|Interactive Drama
+Postal 2|Shooter
+Jump Force|Fighting
+Jump King|Platformer
+War Thunder|Vehicular Combat
+WoW (World of Warcraft)|MMORPG
+Warframe|Action
+Luck to be a Landlord|Strategy
+Slay the Spire|Roguelike
+Slay the Princess|Visual Novel
+Yandere Simulator|Stealth
+Goat Simulator|Sandbox
+I Am Bread|Simulation
+Octodad|Indie
+The Division|RPG
+Who’s Your Daddy|Party
+Frostpunk|Strategy
+Ben and Ed|Platformer
+Just Shapes & Beats|Rhythm
+Rise of the Ronin|Action RPG
+Armored Core|Mech
+Kingdoms of the Fallen|Action RPG
+Friday the 13th|Horror
+PICO Park|Puzzle
+The Untitled Goose Game|Stealth
+Dead Rising|Action
+Bus Simulator|Simulation
+Call of Cthulhu|Horror
+Chernobylite|Survival
+Conan Exiles|Survival
+Control|Action-Adventure
+Crysis|FPS
+Cult of the Lamb|Roguelike
+Dead Island|Action RPG
+Detroit: Become Human|Interactive Drama
+Siren|Horror
+Football Manager|Sports
+Forspoken|Action RPG
+Infamous|Action-Adventure
+Man Eater|Action
+Neoh|Puzzle
+Oddworld|Platformer
+Remnant 2|Action RPG
+Road 96|Adventure
+Stranded Deep|Survival
+Surgeon Simulator|Simulation
+The Last Guardian|Action-Adventure
+The Long Dark|Survival
+TABS (Totally Accurate Battle Simulator)|Simulation
+Twisted Metal|Vehicular Combat
+Valiant Hearts|Adventure
+Wolfenstein|FPS
+Zombie Army|Shooter
+Arma|Military Simulator
+Runescape|MMORPG
+POE (Path of Exile)|Action RPG
+Naraka Bladepoint|Battle Royale
+Destiny|FPS
+Lost Ark|MMORPG
+Monster Hunter World|Action RPG
+Dauntless|Action RPG
+Dragon’s Dogma|Action RPG
+NieR: Automata|Action RPG
+Orcs Must Die|Tower Defense
+Green Hell|Survival
+Unravel Two|Puzzle
+State of Decay|Survival
+Mass Effect|RPG
+Space Engineers|Sandbox
+Amnesia|Horror
+Alan Wake|Action-Adventure
+Human Fall Flat|Puzzle
+Gang Beasts|Party
+Alone in the Dark|Survival Horror
+Bully|Action-Adventure
+Meatboy (Super Meat Boy)|Platformer
+American Truck Simulator|Simulation
+Iron Lung|Horror
+Watch Dogs|Action-Adventure
+Xenoblade Chronicles|JRPG
+Inscryption|Card Game
+Cuphead|Run and Gun
+Shotgun King|Strategy
+Diablo|Action RPG
+House Flipper|Simulation
+CIV (Civilization)|Strategy
+Risk of Rain|Roguelike
+Cookie Clicker|Incremental
+Leaf Blowing Simulator|Simulation
