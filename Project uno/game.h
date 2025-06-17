@@ -1,4 +1,3 @@
-﻿#pragma once
 #ifndef GAME_H
 #define GAME_H
 
@@ -13,13 +12,15 @@ typedef struct {
     char genre[MAX_GENRE_LENGTH];
 } Game;
 
-typedef enum {
+enum {
     MENU_EXIT = 0,
     MENU_ADD_GAME = 1,
     MENU_DISPLAY_ALL = 2,
-    MENU_SUGGEST_BY_GENRE = 3
-} MenuOption;
+    MENU_SUGGEST_BY_GENRE = 3,
+    MENU_DELETE_GAME = 4
+};
 
 void runMenu(void);
 
-#endif // GAME_H
+#endif
+
