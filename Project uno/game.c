@@ -1,13 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "game.h"
-#include <stdio.h>      // uključivanje standardne biblioteke
-#include <stdlib.h>     // za exit() i EXIT_FAILURE
-#include <string.h>     // za funkcije za rad sa stringovima
-#include <errno.h>      // za ispis pogrešaka s perror
-#include <ctype.h>      // za funkciju tolower()
+#include <stdio.h>      
+#include <stdlib.h>     
+#include <string.h>     
+#include <errno.h>      
+#include <ctype.h>      
 
-// Koristimo statičke funkcije da sakrijemo implementaciju od drugih datoteka
+
 static bool fileExists(const char* filename);
 static void createEmptyFile(const char* filename);
 static bool gameExists(const char* name);
@@ -16,20 +16,21 @@ static void displayAllGames(void);
 static void suggestByGenre(const char* genre);
 static void clearInputBuffer(void);
 static int strcasecmp_custom(const char* s1, const char* s2);
+static bool deleteGame(const char* name);
 
-// Glavna funkcija za pokretanje izbornika
+
 void runMenu(void) {
     if (!fileExists(FILE_NAME)) {
-        createEmptyFile(FILE_NAME); // provjera i kreiranje datoteke ako ne postoji
+        createEmptyFile(FILE_NAME);
     }
 
     int choice;
     do {
-        // Jednostavan korisnički izbornik (koristi petlju i switch)
         printf("\n--- Game Manager ---\n");
         printf("1. Dodaj novu igricu\n");
         printf("2. Ispisi sve igrice\n");
         printf("3. Predlozi igrice po zanru\n");
+        printf("4. Obrisi igru\n");
         printf("0. Exit\n");
         printf("Upisi svoj odabir: ");
 
@@ -44,13 +45,12 @@ void runMenu(void) {
         case MENU_ADD_GAME: {
             Game newGame;
 
-            // Unos imena igrice
             printf("Upisi ime igrice: ");
             if (!fgets(newGame.name, sizeof(newGame.name), stdin)) {
                 printf("Error citanja imena igrice.\n");
                 break;
             }
-            newGame.name[strcspn(newGame.name, "\n")] = 0; // uklanjanje novog reda
+            newGame.name[strcspn(newGame.name, "\n")] = 0;
 
             if (strlen(newGame.name) == 0) {
                 printf("Polje za ime igrice ne moze biti prazno.\n");
@@ -58,11 +58,10 @@ void runMenu(void) {
             }
 
             if (gameExists(newGame.name)) {
-                printf("Igrica vec postoji.\n"); // provjera duplikata
+                printf("Igrica vec postoji.\n");
                 break;
             }
 
-            // Unos žanra igrice
             printf("Unesi zanr igrice: ");
             if (!fgets(newGame.genre, sizeof(newGame.genre), stdin)) {
                 printf("Error citanja zanra igrice.\n");
@@ -75,12 +74,12 @@ void runMenu(void) {
                 break;
             }
 
-            addGame(&newGame); // dodavanje igrice u datoteku
+            addGame(&newGame);
             printf("Igrica dodana uspjesno.\n");
             break;
         }
         case MENU_DISPLAY_ALL:
-            displayAllGames(); // ispis svih igrica
+            displayAllGames();
             break;
         case MENU_SUGGEST_BY_GENRE: {
             char genre[MAX_GENRE_LENGTH];
@@ -96,7 +95,29 @@ void runMenu(void) {
                 break;
             }
 
-            suggestByGenre(genre); // filtriranje po žanru
+            suggestByGenre(genre);
+            break;
+        }
+        case MENU_DELETE_GAME: {
+            char nameToDelete[MAX_NAME_LENGTH];
+            printf("Unesi ime igre za brisanje: ");
+            if (!fgets(nameToDelete, sizeof(nameToDelete), stdin)) {
+                printf("Greska pri citanju imena.\n");
+                break;
+            }
+            nameToDelete[strcspn(nameToDelete, "\n")] = 0;
+
+            if (strlen(nameToDelete) == 0) {
+                printf("Ime ne moze biti prazno.\n");
+                break;
+            }
+
+            if (deleteGame(nameToDelete)) {
+                printf("Igra '%s' uspjesno obrisana.\n", nameToDelete);
+            }
+            else {
+                printf("Igra '%s' nije pronadena.\n", nameToDelete);
+            }
             break;
         }
         case MENU_EXIT:
@@ -151,7 +172,7 @@ static bool gameExists(const char* name) {
     return false;
 }
 
-// Dodaje novu igru u datoteku
+// Dodaje novu igru
 static void addGame(const Game* game) {
     FILE* file = fopen(FILE_NAME, "a");
     if (!file) {
@@ -162,7 +183,7 @@ static void addGame(const Game* game) {
     fclose(file);
 }
 
-// Ispisuje sve igrice iz datoteke
+// Ispisuje sve igrice
 static void displayAllGames(void) {
     FILE* file = fopen(FILE_NAME, "r");
     if (!file) {
@@ -185,7 +206,6 @@ static void displayAllGames(void) {
     fclose(file);
 }
 
-// Usporedba stringova neovisna o veličini slova
 static int strcasecmp_custom(const char* s1, const char* s2) {
     while (*s1 && *s2) {
         if (tolower((unsigned char)*s1) != tolower((unsigned char)*s2))
@@ -196,7 +216,6 @@ static int strcasecmp_custom(const char* s1, const char* s2) {
     return (tolower((unsigned char)*s1) - tolower((unsigned char)*s2));
 }
 
-// Ispisuje igre koje pripadaju određenom žanru
 static void suggestByGenre(const char* genre) {
     FILE* file = fopen(FILE_NAME, "r");
     if (!file) {
@@ -226,9 +245,62 @@ static void suggestByGenre(const char* genre) {
     fclose(file);
 }
 
-// Briše višak znakova iz ulaznog buffera
 static void clearInputBuffer(void) {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
+// Brise igru iz datoteke po imenu
+static bool deleteGame(const char* name) {
+    FILE* file = fopen(FILE_NAME, "r");
+    if (!file) {
+        perror("Greska pri otvaranju datoteke");
+        return false;
+    }
+
+    FILE* tempFile = fopen("temp.txt", "w");
+    if (!tempFile) {
+        perror("Greska pri kreiranju privremene datoteke");
+        fclose(file);
+        return false;
+    }
+
+    char line[256];
+    bool found = false;
+    while (fgets(line, sizeof(line), file)) {
+        char* sep = strchr(line, '|');
+        if (!sep) {
+            fputs(line, tempFile);
+            continue;
+        }
+        *sep = '\0';
+        char* gameName = line;
+
+        if (strcmp(gameName, name) == 0) {
+            found = true; // preskoci ovu liniju (brisemo)
+        }
+        else {
+            *sep = '|';
+            fputs(line, tempFile);
+        }
+    }
+
+    fclose(file);
+    fclose(tempFile);
+
+    if (found) {
+        if (remove(FILE_NAME) != 0) {
+            perror("Greska pri brisanju originalne datoteke");
+            return false;
+        }
+        if (rename("temp.txt", FILE_NAME) != 0) {
+            perror("Greska pri preimenovanju privremene datoteke");
+            return false;
+        }
+    }
+    else {
+        remove("temp.txt"); // brisemo temp ako igra nije nadjena
+    }
+
+    return found;
+}
