@@ -1,5 +1,3 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
-
 #include "game.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,12 +10,12 @@ static void createEmptyFile(const char* filename);
 static bool gameExists(const char* name);
 static void addGame(const Game* game);
 static void displayAllGames(void);
+static void displayAllGamesRecursive(FILE* file); // <- REKURZIJA
 static void suggestByGenre(const char* genre);
 static void clearInputBuffer(void);
 static int strcasecmp_custom(const char* s1, const char* s2);
 
 void runMenu(void) {
-    // Ako datoteka ne postoji, kreiraj praznu
     if (!fileExists(FILE_NAME)) {
         createEmptyFile(FILE_NAME);
     }
@@ -132,7 +130,6 @@ static bool gameExists(const char* name) {
 
     char line[256];
     while (fgets(line, sizeof(line), file)) {
-        // Format: name|genre
         char* sep = strchr(line, '|');
         if (!sep) continue;
         *sep = '\0';
@@ -162,19 +159,25 @@ static void displayAllGames(void) {
         return;
     }
 
-    char line[256];
     printf("\n--- Sve igre ---\n");
-    while (fgets(line, sizeof(line), file)) {
-        char* sep = strchr(line, '|');
-        if (!sep) continue;
+    displayAllGamesRecursive(file); // <- POZIV REKURZIJE
+    fclose(file);
+}
+
+//  REKURZIVNA FUNKCIJA
+static void displayAllGamesRecursive(FILE* file) {
+    char line[256];
+    if (!fgets(line, sizeof(line), file)) return;
+
+    char* sep = strchr(line, '|');
+    if (sep) {
         *sep = '\0';
         char* gameName = line;
         char* genre = sep + 1;
         genre[strcspn(genre, "\n")] = 0;
-
         printf("Ime: %s, Zanr: %s\n", gameName, genre);
     }
-    fclose(file);
+    displayAllGamesRecursive(file); // <- REKURZIVNI POZIV
 }
 
 static int strcasecmp_custom(const char* s1, const char* s2) {
