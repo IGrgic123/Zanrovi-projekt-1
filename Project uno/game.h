@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <stdbool.h>
+#include <stdio.h>
 
 #define FILE_NAME "games.txt"
 #define MAX_NAME_LENGTH 100
@@ -12,15 +13,19 @@ typedef struct {
     char genre[MAX_GENRE_LENGTH];
 } Game;
 
-enum {
-    MENU_EXIT = 0,
-    MENU_ADD_GAME = 1,
-    MENU_DISPLAY_ALL = 2,
-    MENU_SUGGEST_BY_GENRE = 3,
-    MENU_DELETE_GAME = 4
+extern Game* games;
+extern size_t gameCount;
+
+enum MenuOption {
+    MENU_EXIT,
+    MENU_ADD,
+    MENU_DISPLAY,
+    MENU_SUGGEST,
+    MENU_DELETE,
+    MENU_UPDATE,
+    MENU_SORT
 };
 
 void runMenu(void);
 
 #endif
-
