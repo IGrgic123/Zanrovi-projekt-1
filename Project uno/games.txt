@@ -27,7 +27,7 @@ Witcher 3|Action RPG
 Dark Souls 3|Action RPG
 Elden Ring|Action RPG
 Bloodborne|Action RPG
-Demon’s Souls|Action RPG
+Demons Souls|Action RPG
 Sekiro: Shadows Die Twice|Action-Adventure
 Fortnite|Battle Royale
 Call of Duty: Black Ops 1|FPS
@@ -59,7 +59,6 @@ OSU|Rhythm
 It Takes Two|Co-op
 A Way Out|Co-op
 Hades|Roguelike
-Assassin’s Creed Valhalla|Action-Adventure
 Batman all|Action-Adventure
 Brawlhalla|Fighting
 Binding of Isaac|Roguelike
@@ -92,7 +91,6 @@ Fifa|Sports
 NBA|Sports
 Madden|Sports
 Starcraft|RTS
-No Man’s Sky|Exploration
 Friday Night Funkin’|Rhythm
 Sea of Thieves|Action-Adventure
 Rainbow Six Siege|Tactical Shooter
@@ -113,7 +111,6 @@ Helltaker|Puzzle
 Medal of Honor|FPS
 Until Dawn|Horror
 Life is Strange|Adventure
-Five Nights at Freddy’s (FNAF)|Horror
 Raft|Survival
 Subnautica|Survival
 Alien Isolation|Survival Horror
@@ -142,7 +139,6 @@ Hello Neighbor|Stealth
 Celeste|Platformer
 Thief Simulator|Simulation
 Darkwood|Survival Horror
-Baldur's Gate 3|RPG
 Pac-Man|Arcade
 Plants vs. Zombies|Tower Defense
 Stronghold Crusade|RTS
@@ -166,7 +162,6 @@ Death Stranding|Action
 Dying Light|Action
 Deathloop|FPS
 We Happy Few|Survival
-Poppy’s Playtime|Horror
 Bendy and the Ink Machine|Horror
 Blair Witch|Survival Horror
 Rain World|Platformer
@@ -182,14 +177,11 @@ Slime Rancher|Simulation
 Bioshock|FPS
 Red Dead Redemption|Action-Adventure
 Ghostrunner|Action
-Mirror’s Edge|Action-Adventure
 WWZ (World War Z)|Shooter
 World of Warcraft (WOW)|MMORPG
 Cities Skylines|Simulation
 Trackmania (all)|Racing
-Baldi’s Basics|Horror
 Big Rigs Over the Road|Racing
-Don’t Touch the Button|Party
 Not Your Neighbor|Horror
 PEZ|Puzzle
 Ghost Recon|Tactical Shooter
@@ -272,7 +264,6 @@ Goat Simulator|Sandbox
 I Am Bread|Simulation
 Octodad|Indie
 The Division|RPG
-Who’s Your Daddy|Party
 Frostpunk|Strategy
 Ben and Ed|Platformer
 Just Shapes & Beats|Rhythm
@@ -318,7 +309,6 @@ Destiny|FPS
 Lost Ark|MMORPG
 Monster Hunter World|Action RPG
 Dauntless|Action RPG
-Dragon’s Dogma|Action RPG
 NieR: Automata|Action RPG
 Orcs Must Die|Tower Defense
 Green Hell|Survival
@@ -346,3 +336,4 @@ CIV (Civilization)|Strategy
 Risk of Rain|Roguelike
 Cookie Clicker|Incremental
 Leaf Blowing Simulator|Simulation
+
