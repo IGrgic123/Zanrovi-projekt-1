@@ -299,7 +299,6 @@ static void suggestByGenre(void)
         printf("Nema igre za taj zanr.\n");
     }
 }
-```c
 static void deleteGame(void)
 {
     char name[MAX_NAME_LENGTH];
